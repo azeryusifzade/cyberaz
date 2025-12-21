@@ -3,74 +3,419 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBER AZ - Kibertəhlükəsizlik</title>
+    <title>CYBER AZ - Rəqəmsal Təhlükəsizlik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    
 </head>
 <body>
-    <header>
-        <h1>CYBER AZ</h1>
-        <p>Rəqəmsal təhlükəsizliyin qorunması ilə bağlı məsləhət və məlumatlar</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#esas">Əsas Səhifə</a></li>
-            <li><a href="#meslehetler">Kibertəhlükəsizlik Məsləhətləri</a></li>
-            <li><a href="#elaqe">Əlaqə</a></li>
+    <div class="scan-line"></div>
+    <div class="grid-bg"></div>
+    <div class="content-wrapper">
+        <nav>
+    <div class="nav-container">
+        <div class="logo">[CYBER AZ]</div>
+        <button class="mobile-menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">&gt; ƏSAS</a></li>
+            <li><a href="#threats">&gt; TƏHLÜKƏLƏR</a></li>
+            <li><a href="#tips">&gt; MƏSLƏHƏTLƏR</a></li>
+            <li><a href="#contact">&gt; ƏLAQƏ</a></li>
         </ul>
-    </nav>
-
-    <main>
-        <section id="esas">
-            <h2>Əsas Səhifə</h2>
-            <p>Müasir rəqəmsal dünyada kibertəhlükəsizlik hər bir şəxs və təşkilat üçün mühüm əhəmiyyət kəsb edir.</p>
-            <p>Kibertəhlükələr daim inkişaf edir və yeni hücum üsulları meydana gəlir. Buna görə də proaktiv yanaşma və davamlı monitorinq vacibdir. Kibertəhlükəsizlik mövzusunda ümumi suallar və maarifləndirici məlumatlar veririk.</p>
+    </div>
+</nav>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+  RƏQƏMSAL TƏHLÜKƏSİZLİK<span class="cursor"></span>
+</h1>
+                <p>// Müasir rəqəmsal dünyada kibertəhlükəsizlik hər bir şəxs və təşkilat üçün mühüm əhəmiyyət kəsb edir. Kibertəhlükələr daim inkişaf edir və yeni hücum üsulları meydana gəlir. Proaktiv yanaşma və davamlı monitorinq kritik əhəmiyyət daşıyır.</p>
+            </div>
         </section>
-
-        <section id="meslehetler">
-            <h2>Kibertəhlükəsizlik Məsləhətləri</h2>
-            <p>Rəqəmsal təhlükəsizliyinizi artırmaq üçün aşağıdaki tövsiyələrə əməl edin:</p>
-            
-            <h3>1. Güclü Parollar İstifadə Edin</h3>
-            <p>Parolunuz ən azı 12 simvoldan ibarət olmalıdır. Böyük və kiçik hərflər, rəqəmlər və xüsusi simvollar istifadə edin. Hər hesab üçün fərqli parol istifadə edin.</p>
-            
-            <h3>2. İki Faktorlu Autentifikasiyanı Aktivləşdirin</h3>
-            <p>Mümkün olan hər yerdə iki faktorlu autentifikasiya (2FA) aktivləşdirin. Bu, hesabınıza əlavə təhlükəsizlik təbəqəsi əlavə edir.</p>
-            
-            <h3>3. Proqram Təminatınızı Yeniləyin</h3>
-            <p>Əməliyyat sistemini, brauzerləri və proqramları daim yeniləyin. Yeniləmələr tez-tez təhlükəsizlik boşluqlarını bağlayır.</p>
-            
-            <h3>4. Phishing Hücumlarından Ehtiyatlı Olun</h3>
-            <p>Şübhəli e-poçtlardakı linklərə və qoşmalara klikləməyin. Bank və ya şirkətlər heç vaxt e-poçt vasitəsilə şəxsi məlumat istəməzlər.</p>
-            
-            <h3>5. İctimai Wi-Fi-də Ehtiyatlı Olun</h3>
-            <p>İctimai Wi-Fi şəbəkələrində bank əməliyyatları və ya həssas məlumatlarla bağlı işlər görməyin. VPN istifadə edin.</p>
-            
-            <h3>6. Məlumatlarınızın Ehtiyat Nüsxəsini Çıxarın</h3>
-            <p>Mühüm məlumatların mütəmadi olaraq ehtiyat nüsxəsini çıxarın. Ransomware hücumlarından qorunmaq üçün vacibdir.</p>
-            
-            <h3>7. Antivirus Proqramı Quraşdırın</h3>
-            <p>Etibarlı antivirus proqramı quraşdırın və onu daim aktiv saxlayın. Mütəmadi skanlar aparın.</p>
-            
-            <h3>8. Sosial Mediada Diqqətli Olun</h3>
-            <p>Sosial mediada çox şəxsi məlumat paylaşmayın. Bu məlumatlar kibir cinayətkarlar tərəfindən istifadə oluna bilər.</p>
-            
-            <h3>9. HTTPS İstifadə Edin</h3>
-            <p>Onlayn alış-veriş və ya şəxsi məlumat daxil edərkən saytın HTTPS ilə başladığından əmin olun.</p>
-            
-            <h3>10. Şübhəli Fəaliyyəti İzləyin</h3>
-            <p>Bank hesablarınızı və kredit kartlarınızı mütəmadi yoxlayın. Qeyri-adi fəaliyyət görəndə dərhal bildirin.</p>
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">KİBER HÜCUMLAR İNSAN XƏTASI</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">4.5M</span>
+                    <span class="stat-label">GÜNDƏLİK ZƏRƏRLI PROQRAM</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">43%</span>
+                    <span class="stat-label">KİÇİK BİZNES HƏDƏFİ</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">MONİTORİNQ TƏLƏBİ</span>
+                </div>
+            </div>
         </section>
-
-        <section id="elaqe">
-            <h2>Əlaqə</h2>
-            <p>Bizimlə əlaqə saxlamaq və ətraflı məlumat əldə etmək üçün aşağıdaki linkdən istifadə edə bilərsiniz:</p>
-            <p><a href="https://www.instagram.com/cyberaz.co">Instagram: @cyberaz.co</a></p>
+        <section id="threats" class="threat-matrix">
+            <h2 class="matrix-title">TƏHDİD MATRİSİ</h2>
+            <p class="matrix-subtitle">// Ən çox yayılmış kibertəhlükə növləri və onlardan qorunma metodları</p>
+            <div class="threat-grid">
+                <div class="threat-item">
+                    <span class="threat-icon">[!]</span>
+                    <h3 class="threat-name">PHISHING HÜCUMLARI</h3>
+                    <p class="threat-desc">Saxta e-poçt və mesajlar vasitəsilə şəxsi məlumatların oğurlanması cəhdləri. Şübhəli linkləri açmayın və mənbəni həmişə yoxlayın.</p>
+                </div>
+                <div class="threat-item">
+                    <span class="threat-icon">[*]</span>
+                    <h3 class="threat-name">RANSOMWARE</h3>
+                    <p class="threat-desc">Məlumatları şifrələyib fidyə tələb edən zərərli proqramlar. Mütəmadi yedəkləmə və antivirus qoruması kritikdir.</p>
+                </div>
+                <div class="threat-item">
+                    <span class="threat-icon">[+]</span>
+                    <h3 class="threat-name">SOSIAL MÜHƏNDİSLİK</h3>
+                    <p class="threat-desc">İnsanları manipulyasiya edərək məlumat əldə etmə texnikaları. Həddindən artıq şəxsi məlumat paylaşmaqdan çəkinin.</p>
+                </div>
+                <div class="threat-item">
+                    <span class="threat-icon">[x]</span>
+                    <h3 class="threat-name">MAN-IN-THE-MIDDLE</h3>
+                    <p class="threat-desc">İki tərəf arasında kommunikasiyanın müdaxilə edilməsi. İctimai Wi-Fi-də VPN istifadə edin.</p>
+                </div>
+                <div class="threat-item">
+                    <span class="threat-icon">[>]</span>
+                    <h3 class="threat-name">SQL INJECTION</h3>
+                    <p class="threat-desc">Verilənlər bazasına zərərli SQL sorğuları göndərmə. Veb tətbiqlər üçün düzgün validasiya vacibdir.</p>
+                </div>
+                <div class="threat-item">
+                    <span class="threat-icon">[#]</span>
+                    <h3 class="threat-name">DDoS HÜCUMLARI</h3>
+                    <p class="threat-desc">Serveri iflic etdirmək üçün həddindən artıq sorğu göndərilməsi. Yükü bölüşdürmə və firewall lazımdır.</p>
+                </div>
+            </div>
         </section>
-    </main>
+        <section class="terminal-section">
+            <h2 class="section-title">TERMİNAL İNTERFEYS</h2>
+            <p class="section-subtitle">// Rəqəmsal təhlükəsizlik əməliyyatları və sistem monitorinqi</p>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                    </div>
+                    <div class="terminal-title">SECURITY AUDIT.sh</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">./security audit.sh --full-scan</span></div>
+                    <div class="terminal-line"><span class="output">[*] İnitializing security audit protocol...</span></div>
+                    <div class="terminal-line"><span class="output">[*] Scanning network perimeter...</span></div>
+                    <div class="terminal-line"><span class="success">[+] Firewall status: ACTIVE | Rules: 47 configured</span></div>
+                    <div class="terminal-line"><span class="success">[+] IDS/IPS systems: OPERATIONAL</span></div>
+                    <div class="terminal-line"><span class="warning">[!] 3 suspicious connections detected and blocked</span></div>
+                    <div class="terminal-line"><span class="success">[+] Encryption protocols: AES-256 | RSA-4096</span></div>
+                    <div class="terminal-line"><span class="output">[*] Audit complete. System integrity: 94%</span></div>
+                </div>
+            </div>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                    </div>
+                    <div class="terminal-title">OPSEC CHECK.sh</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">opsec-analyzer --deep --anonymity</span></div>
+                    <div class="terminal-line"><span class="output">[*] Analyzing operational security posture...</span></div>
+                    <div class="terminal-line"><span class="success">[+] VPN tunnel established: 256-bit encryption</span></div>
+                    <div class="terminal-line"><span class="success">[+] DNS leak test: PASSED | No leaks detected</span></div>
+                    <div class="terminal-line"><span class="warning">[!] Browser fingerprint detected. Use hardened config.</span></div>
+                    <div class="terminal-line"><span class="success">[+] Metadata scrubbing: ENABLED</span></div>
+                    <div class="terminal-line"><span class="output">[*] Anonymity score: 87/100 | GOOD</span></div>
+                </div>
+            </div>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                    </div>
+                    <div class="terminal-title">THREAT INTEL.sh</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">threat-monitor --realtime --ioc-feed</span></div>
+                    <div class="terminal-line"><span class="output">[*] Connecting to threat intelligence feeds...</span></div>
+                    <div class="terminal-line"><span class="output">[*] Analyzing indicators of compromise (IOCs)...</span></div>
+                    <div class="terminal-line"><span class="success">[+] 0 known malicious IPs in traffic</span></div>
+                    <div class="terminal-line"><span class="success">[+] Malware signatures: DATABASE UP-TO-DATE</span></div>
+                    <div class="terminal-line"><span class="warning">[!] 12 phishing attempts blocked in last 24h</span></div>
+                    <div class="terminal-line"><span class="output">[*] Threat level: LOW | Continue monitoring</span></div>
+                </div>
+            </div>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                    </div>
+                    <div class="terminal-title">PASSWORD AUDIT.sh</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">pwd-strength-analyzer --check-breaches</span></div>
+                    <div class="terminal-line"><span class="output">[*] Analyzing password security metrics...</span></div>
+                    <div class="terminal-line"><span class="success">[+] Average password entropy: 128 bits</span></div>
+                    <div class="terminal-line"><span class="error">[x] 2 passwords found in breach databases</span></div>
+                    <div class="terminal-line"><span class="warning">[!] 5 accounts without 2FA enabled</span></div>
+                    <div class="terminal-line"><span class="success">[+] Password manager: IN USE</span></div>
+                    <div class="terminal-line"><span class="output">[*] Recommendation: Rotate compromised credentials</span></div>
+                </div>
+            </div>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                    </div>
+                    <div class="terminal-title">COMPLIANCE CHECK.sh</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">compliance-scanner --gdpr --iso27001</span></div>
+                    <div class="terminal-line"><span class="output">[*] Running compliance verification protocols...</span></div>
+                    <div class="terminal-line"><span class="success">[+] Data encryption at rest: COMPLIANT</span></div>
+                    <div class="terminal-line"><span class="success">[+] Access control policies: IMPLEMENTED</span></div>
+                    <div class="terminal-line"><span class="success">[+] Audit logging: ACTIVE | 90-day retention</span></div>
+                    <div class="terminal-line"><span class="warning">[!] Incident response plan: NEEDS UPDATE</span></div>
+                    <div class="terminal-line"><span class="output">[*] Overall compliance score: 91% | ACCEPTABLE</span></div>
+                </div>
+            </div>
+        </section>
+           <section id="tips" class="section">
+    <h2 class="section-title">TƏHLÜKƏSİZLİK PROTOKOLLARI</h2>
+    <p class="section-subtitle">// Rəqəmsal təhlükəsizliyinizi artırmaq üçün əsas qaydalar</p>
+    <div class="tips-grid">
+        <div class="tip-card">
+            <div class="tip-number">[01]</div>
+            <h3>GÜCLÜ PAROLLAR</h3>
+            <p>Parolunuz ən azı 12 simvoldan ibarət olmalıdır. Böyük və kiçik hərflər, rəqəmlər və xüsusi simvollar istifadə edin. Hər hesab üçün fərqli parol seçin.</p>
+        </div>
+        <div class="tip-card">
+            <div class="tip-number">[02]</div>
+            <h3>İKİ FAKTORLU AUTENTİFİKASİYA (2FA)</h3>
+            <p>Mümkün olan hər yerdə iki faktorlu autentifikasiya aktivləşdirin. Bu, hesabınıza əlavə təhlükəsizlik qatması əlavə edir və icazəsiz girişi əngəlləyir.</p>
+        </div>
+        <div class="tip-card">
+            <div class="tip-number">[03]</div>
+            <h3>PROQRAMLARI YENİLƏYİN</h3>
+            <p>Əməliyyat sistemi, brauzerlər və proqramları daim yeniləyin. Yeniləmələr tez-tez təhlükəsizlik boşluqlarını bağlayır və sistemin stabilliyini artırır.</p>
+        </div>
+        <div class="tip-card">
+            <div class="tip-number">[04]</div>
+            <h3>PHISHING-DƏN QORUNMA</h3>
+            <p>Şübhəli e-poçtlardakı linklərə və qoşmalara klikləməyin. Bank və ya şirkətlər heç vaxt e-poçt vasitəsilə şəxsi məlumat istəməzlər. Göndərənin ünvanını yoxlayın.</p>
+        </div>
+        <div class="tip-card">
+            <div class="tip-number">[05]</div>
+            <h3>Wi-Fi TƏHLÜKƏSİZLİYİ</h3>
+            <p>İctimai Wi-Fi şəbəkələrində bank əməliyyatları və ya həssas məlumatlarla işləməyin. Məxfi əməliyyatlar üçün VPN istifadə edin.</p>
+        </div>
+        <div class="tip-card">
+            <div class="tip-number">[06]</div>
+            <h3>BACKUP SİSTEMİ</h3>
+            <p>Mühüm məlumatların mütəmadi ehtiyat nüsxəsini çıxarın. Ransomware hücumlarından qorunmaq üçün vacibdir. Cloud və lokal yedəkləmə tövsiyə olunur.</p>
+        </div>
+        <div class="tip-card">
+            <div class="tip-number">[07]</div>
+            <h3>ANTİVİRUS PROQRAM</h3>
+            <p>Etibarlı antivirus proqramı quraşdırın və onu daim aktiv saxlayın. Mütəmadi skanlar aparın və real-time qorumanı aktiv edin.</p>
+        </div>
+        <div class="tip-card">
+            <div class="tip-number">[08]</div>
+            <h3>SOSİAL MEDİA MƏXFİLİYİ</h3>
+            <p>Sosial mediada həddindən artıq şəxsi məlumat paylaşmayın. Bu məlumatlar kiber cinayətkarlar tərəfindən istifadə oluna bilər. Məxfilik parametrlərini yoxlayın.</p>
+        </div>
+        <div class="tip-card">
+            <div class="tip-number">[09]</div>
+            <h3>HTTPS PROTOKOLU</h3>
+            <p>Onlayn alış-veriş və şəxsi məlumat daxil edərkən saytın HTTPS ilə başladığından əmin olun. SSL sertifikatını yoxlayın.</p>
+        </div>
+        <div class="tip-card">
+            <div class="tip-number">[10]</div>
+            <h3>MONİTORİNQ SİSTEMİ</h3>
+            <p>Bank hesablarınızı və kredit kartlarınızı mütəmadi yoxlayın. Qeyri-adi fəaliyyət gördükdə dərhal bildirin və parolları dəyişdirin.</p>
+        </div>
+    </div>
+</section>
+        <section id="hash" class="section hash-section">
+    <h2 class="section-title">HASH GENERATOR</h2>
+    <p class="section-subtitle">// Mətninizi müxtəlif hash alqoritmləri ilə şifrələyin</p>
+    
+    <div class="hash-container">
+        <div class="hash-input-wrapper">
+            <label for="hashInput">MƏTN DAXİL EDİN:</label>
+            <textarea id="hashInput" placeholder="Şifrələnəcək mətni buraya yazın..." rows="4"></textarea>
+        </div>
+        
+        <div class="hash-algorithms">
+            <button class="hash-btn active" data-algo="md5">MD5</button>
+            <button class="hash-btn" data-algo="sha1">SHA-1</button>
+            <button class="hash-btn" data-algo="sha256">SHA-256</button>
+            <button class="hash-btn" data-algo="sha512">SHA-512</button>
+        </div>
+        
+        <div class="hash-output-wrapper">
+            <label>HASH NƏTICƏ:</label>
+            <div class="hash-output" id="hashOutput">
+                <span class="placeholder">[Hash nəticəsi burada görünəcək...]</span>
+            </div>
+            <button class="copy-btn" id="copyBtn" style="display:none;">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                </svg>
+                KOPYALA
+            </button>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 CYBER AZ. Bütün hüquqlar qorunur</p>
-        <p>Bu layihə məlumatlandırıcı və maarifləndirici xarakter daşıyır.Biz hüquqi şəxs deyilik və kibertəhlükəsizlik sahəsində peşəkar xidmətlər göstərmirik.</p>
-    </footer>
+        <section id="contact" class="section contact-section">
+            <div class="contact-content">
+                <h2 class="section-title">ƏLAQƏ KANALLARI</h2>
+                <p class="section-subtitle">// Bizimlə əlaqə saxlamaq və ətraflı məlumat əldə etmək üçün</p>
+                <a href="https://instagram.com/cyberaz.co" target=" blank" class="social-link">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.897 4.897 0 015.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 10-2.5 0 1.25 1.25 0 002.5 0zM12 9a3 3 0 110 6 3 3 0 010-6z"/>
+                    </svg>
+                    @CYBERAZ.CO
+                </a>
+            </div>
+        </section>
+        <footer>
+            <p>© 2025 CYBER AZ // BÜTÜN HÜQUQLAR QORUNUR</p>
+            <p class="disclaimer">// SYSTEM INFO: Bu layihə məlumatlandırıcı və maarifləndirici xarakter daşıyır. Biz hüquqi şəxs deyilik və kibertəhlükəsizlik sahəsində peşəkar xidmətlər təqdim etmirik. Məlumatlar ümumi təhsil məqsədlidir və peşəkar məsləhəti əvəz etmir.</p>
+        </footer>
+    </div>
+        <script>
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        const threatObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                    threatObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px'
+        });
+
+        document.querySelectorAll('.threat-item').forEach(item => {
+            threatObserver.observe(item);
+        });
+        const hashInput = document.getElementById('hashInput');
+    const hashOutput = document.getElementById('hashOutput');
+    const copyBtn = document.getElementById('copyBtn');
+    const hashBtns = document.querySelectorAll('.hash-btn');
+    let currentAlgo = 'md5';
+    
+    function generateHash() {
+        const text = hashInput.value.trim();
+        
+        if (!text) {
+            hashOutput.innerHTML = '<span class="placeholder">[Hash nəticəsi burada görünəcək...]</span>';
+            copyBtn.style.display = 'none';
+            return;
+        }
+        
+        let hash = '';
+        
+        switch(currentAlgo) {
+            case 'md5':
+                hash = CryptoJS.MD5(text).toString();
+                break;
+            case 'sha1':
+                hash = CryptoJS.SHA1(text).toString();
+                break;
+            case 'sha256':
+                hash = CryptoJS.SHA256(text).toString();
+                break;
+            case 'sha512':
+                hash = CryptoJS.SHA512(text).toString();
+                break;
+        }
+        
+        hashOutput.innerHTML = `<span class="hash-result">${hash}</span>`;
+        copyBtn.style.display = 'inline-flex';
+    }
+    
+    hashInput.addEventListener('input', generateHash);
+    
+    hashBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            hashBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentAlgo = btn.dataset.algo;
+            generateHash();
+        });
+    });
+    
+    copyBtn.addEventListener('click', () => {
+        const hashText = hashOutput.querySelector('.hash-result');
+        if (hashText) {
+            navigator.clipboard.writeText(hashText.textContent).then(() => {
+                copyBtn.classList.add('copied');
+                copyBtn.innerHTML = `
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    KOPYALANDI
+                `;
+                
+                setTimeout(() => {
+                    copyBtn.classList.remove('copied');
+                    copyBtn.innerHTML = `
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                        </svg>
+                        KOPYALA
+                    `;
+                }, 2000);
+            });
+        }
+    });
+        </script>
 </body>
 </html>
