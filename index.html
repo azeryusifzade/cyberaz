@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CYBER AZ - Rəqəmsal Təhlükəsizlik</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     
 </head>
@@ -25,6 +26,7 @@
             <li><a href="#home">&gt; ƏSAS</a></li>
             <li><a href="#threats">&gt; TƏHLÜKƏLƏR</a></li>
             <li><a href="#tips">&gt; MƏSLƏHƏTLƏR</a></li>
+            <li><a href="#hash" class="nav-link">&gt; HASH GENERATOR</a></li>
             <li><a href="#contact">&gt; ƏLAQƏ</a></li>
         </ul>
     </div>
@@ -93,106 +95,119 @@
                 </div>
             </div>
         </section>
-        <section class="terminal-section">
-            <h2 class="section-title">TERMİNAL İNTERFEYS</h2>
-            <p class="section-subtitle">// Rəqəmsal təhlükəsizlik əməliyyatları və sistem monitorinqi</p>
-            <div class="terminal">
-                <div class="terminal-header">
-                    <div class="terminal-dots">
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                    </div>
-                    <div class="terminal-title">SECURITY AUDIT.sh</div>
+<section class="terminal-section">
+        <h2 class="section-title">TERMİNAL İNTERFEYS</h2>
+        <p class="section-subtitle">// Rəqəmsal təhlükəsizlik əməliyyatları və sistem monitorinqi</p>
+        
+        
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
                 </div>
-                <div class="terminal-content">
-                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">./security audit.sh --full-scan</span></div>
-                    <div class="terminal-line"><span class="output">[*] İnitializing security audit protocol...</span></div>
-                    <div class="terminal-line"><span class="output">[*] Scanning network perimeter...</span></div>
-                    <div class="terminal-line"><span class="success">[+] Firewall status: ACTIVE | Rules: 47 configured</span></div>
-                    <div class="terminal-line"><span class="success">[+] IDS/IPS systems: OPERATIONAL</span></div>
-                    <div class="terminal-line"><span class="warning">[!] 3 suspicious connections detected and blocked</span></div>
-                    <div class="terminal-line"><span class="success">[+] Encryption protocols: AES-256 | RSA-4096</span></div>
-                    <div class="terminal-line"><span class="output">[*] Audit complete. System integrity: 94%</span></div>
-                </div>
+                <div class="terminal-title">network_security.sh</div>
             </div>
-            <div class="terminal">
-                <div class="terminal-header">
-                    <div class="terminal-dots">
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                    </div>
-                    <div class="terminal-title">OPSEC CHECK.sh</div>
-                </div>
-                <div class="terminal-content">
-                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">opsec-analyzer --deep --anonymity</span></div>
-                    <div class="terminal-line"><span class="output">[*] Analyzing operational security posture...</span></div>
-                    <div class="terminal-line"><span class="success">[+] VPN tunnel established: 256-bit encryption</span></div>
-                    <div class="terminal-line"><span class="success">[+] DNS leak test: PASSED | No leaks detected</span></div>
-                    <div class="terminal-line"><span class="warning">[!] Browser fingerprint detected. Use hardened config.</span></div>
-                    <div class="terminal-line"><span class="success">[+] Metadata scrubbing: ENABLED</span></div>
-                    <div class="terminal-line"><span class="output">[*] Anonymity score: 87/100 | GOOD</span></div>
-                </div>
+            <div class="terminal-content">
+                <div class="terminal-line"><span class="prompt">admin@cyberaz:~$</span> <span class="cmd">sudo nmap -sV -O --script=vuln 192.168.1.0/24</span></div>
+                <div class="terminal-line">Starting Nmap 7.94 at 2025-12-27 14:32 AZT</div>
+                <div class="terminal-line">Nmap scan report for 192.168.1.0/24</div>
+                <div class="terminal-line">Host is up (0.0012s latency)</div>
+                <div class="terminal-line">PORT    STATE SERVICE    VERSION</div>
+                <div class="terminal-line">22/tcp  open  ssh        OpenSSH 8.9p1</div>
+                <div class="terminal-line">80/tcp  open  http       nginx 1.18.0</div>
+                <div class="terminal-line">443/tcp open  ssl/https  nginx 1.18.0</div>
             </div>
-            <div class="terminal">
-                <div class="terminal-header">
-                    <div class="terminal-dots">
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                    </div>
-                    <div class="terminal-title">THREAT INTEL.sh</div>
+        </div>
+
+      
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
                 </div>
-                <div class="terminal-content">
-                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">threat-monitor --realtime --ioc-feed</span></div>
-                    <div class="terminal-line"><span class="output">[*] Connecting to threat intelligence feeds...</span></div>
-                    <div class="terminal-line"><span class="output">[*] Analyzing indicators of compromise (IOCs)...</span></div>
-                    <div class="terminal-line"><span class="success">[+] 0 known malicious IPs in traffic</span></div>
-                    <div class="terminal-line"><span class="success">[+] Malware signatures: DATABASE UP-TO-DATE</span></div>
-                    <div class="terminal-line"><span class="warning">[!] 12 phishing attempts blocked in last 24h</span></div>
-                    <div class="terminal-line"><span class="output">[*] Threat level: LOW | Continue monitoring</span></div>
-                </div>
+                <div class="terminal-title">pentest_webapp.sh</div>
             </div>
-            <div class="terminal">
-                <div class="terminal-header">
-                    <div class="terminal-dots">
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                    </div>
-                    <div class="terminal-title">PASSWORD AUDIT.sh</div>
-                </div>
-                <div class="terminal-content">
-                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">pwd-strength-analyzer --check-breaches</span></div>
-                    <div class="terminal-line"><span class="output">[*] Analyzing password security metrics...</span></div>
-                    <div class="terminal-line"><span class="success">[+] Average password entropy: 128 bits</span></div>
-                    <div class="terminal-line"><span class="error">[x] 2 passwords found in breach databases</span></div>
-                    <div class="terminal-line"><span class="warning">[!] 5 accounts without 2FA enabled</span></div>
-                    <div class="terminal-line"><span class="success">[+] Password manager: IN USE</span></div>
-                    <div class="terminal-line"><span class="output">[*] Recommendation: Rotate compromised credentials</span></div>
-                </div>
+            <div class="terminal-content">
+                <div class="terminal-line"><span class="prompt">admin@cyberaz:~$</span> <span class="cmd">sqlmap -u "https://target.az/login" --batch</span></div>
+                <div class="terminal-line">sqlmap/1.7.2 starting</div>
+                <div class="terminal-line">testing connection to the target URL</div>
+                <div class="terminal-line">testing if GET parameter 'username' is dynamic</div>
+                <div class="terminal-line">GET parameter 'username' appears to be dynamic</div>
+                <div class="terminal-line">heuristic (basic) test shows that GET parameter 'username' might be injectable</div>
+                <div class="terminal-line">testing for SQL injection on GET parameter 'username'</div>
+                <div class="terminal-line">GET parameter 'username' is vulnerable. Do you want to keep testing?</div>
             </div>
-            <div class="terminal">
-                <div class="terminal-header">
-                    <div class="terminal-dots">
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                        <div class="terminal-dot"></div>
-                    </div>
-                    <div class="terminal-title">COMPLIANCE CHECK.sh</div>
+        </div>
+
+     
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
                 </div>
-                <div class="terminal-content">
-                    <div class="terminal-line"><span class="prompt">root@cyberaz:~#</span><span class="cmd">compliance-scanner --gdpr --iso27001</span></div>
-                    <div class="terminal-line"><span class="output">[*] Running compliance verification protocols...</span></div>
-                    <div class="terminal-line"><span class="success">[+] Data encryption at rest: COMPLIANT</span></div>
-                    <div class="terminal-line"><span class="success">[+] Access control policies: IMPLEMENTED</span></div>
-                    <div class="terminal-line"><span class="success">[+] Audit logging: ACTIVE | 90-day retention</span></div>
-                    <div class="terminal-line"><span class="warning">[!] Incident response plan: NEEDS UPDATE</span></div>
-                    <div class="terminal-line"><span class="output">[*] Overall compliance score: 91% | ACCEPTABLE</span></div>
-                </div>
+                <div class="terminal-title">ssl_checker.sh</div>
             </div>
-        </section>
+            <div class="terminal-content">
+                <div class="terminal-line"><span class="prompt">admin@cyberaz:~$</span> <span class="cmd">testssl.sh --full cyberaz.tech</span></div>
+                <div class="terminal-line">Testing SSL/TLS protocols via sockets</div>
+                <div class="terminal-line">SSLv2      not offered</div>
+                <div class="terminal-line">SSLv3      not offered</div>
+                <div class="terminal-line">TLS 1      not offered</div>
+                <div class="terminal-line">TLS 1.1    not offered</div>
+                <div class="terminal-line">TLS 1.2    offered (OK)</div>
+                <div class="terminal-line">TLS 1.3    offered (OK)</div>
+            </div>
+        </div>
+
+
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                </div>
+                <div class="terminal-title">log_analyzer.sh</div>
+            </div>
+            <div class="terminal-content">
+                <div class="terminal-line"><span class="prompt">admin@cyberaz:~$</span> <span class="cmd">tail -f /var/log/auth.log | grep "Failed"</span></div>
+                <div class="terminal-line">Dec 27 14:32:15 server sshd[12458]: Failed password for root from 45.142.214.89</div>
+                <div class="terminal-line">Dec 27 14:32:18 server sshd[12460]: Failed password for admin from 45.142.214.89</div>
+                <div class="terminal-line">Dec 27 14:32:21 server sshd[12462]: Failed password for user from 103.251.167.10</div>
+                <div class="terminal-line">Dec 27 14:32:24 server sshd[12464]: Failed password for test from 103.251.167.10</div>
+                <div class="terminal-line">Dec 27 14:32:27 server sshd[12466]: Failed password for guest from 185.220.101.45</div>
+                <div class="terminal-line">Dec 27 14:32:30 server sshd[12468]: Failed password for ubuntu from 185.220.101.45</div>
+            </div>
+        </div>
+
+
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                </div>
+                <div class="terminal-title">security_audit.sh</div>
+            </div>
+            <div class="terminal-content">
+                <div class="terminal-line"><span class="prompt">admin@cyberaz:~$</span> <span class="cmd">lynis audit system</span></div>
+                <div class="terminal-line">Lynis 3.0.8 - Security auditing tool for Linux/Unix</div>
+                <div class="terminal-line">Performing system security scan...</div>
+                <div class="terminal-line">[AUTH-9262] Checking presence LDAP PAM module     [ NOT FOUND ]</div>
+                <div class="terminal-line">[AUTH-9268] Checking presence password strength testing tools  [ OK ]</div>
+                <div class="terminal-line">[AUTH-9283] Checking systemd two-factor authentication  [ NOT FOUND ]</div>
+                <div class="terminal-line">[FILE-6310] Checking /tmp, /home and /var directory  [ OK ]</div>
+                <div class="terminal-line">[KRNL-5788] Checking sysctl key kernel.core_uses_pid  [ OK ]</div>
+            </div>
+        </div>
+    </section>
            <section id="tips" class="section">
     <h2 class="section-title">TƏHLÜKƏSİZLİK PROTOKOLLARI</h2>
     <p class="section-subtitle">// Rəqəmsal təhlükəsizliyinizi artırmaq üçün əsas qaydalar</p>
@@ -280,6 +295,105 @@
         </div>
     </div>
 </section>
+<section id="iplookup" class="section ip-lookup-section">
+    <h2 class="section-title">IP / GEOLOKASİYA AXTARIŞI</h2>
+    <p class="section-subtitle">// IP ünvanının coğrafi mövqeyini və əlaqəli məlumatları müəyyən edin</p>
+    
+    <div class="ip-lookup-container">
+        <div class="ip-input-wrapper">
+            <label for="ipInput">IP ÜNVANI DAXİL EDİN:</label>
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="ipInput" 
+                    placeholder="Məsələn: 8.8.8.8 və ya boş buraxın (öz IP-niz)" 
+                    autocomplete="off"
+                />
+                <button class="lookup-btn" id="lookupBtn">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                    AXTAR
+                </button>
+            </div>
+            <div class="quick-actions">
+                <button class="quick-btn" id="myIpBtn">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    ÖZ IP-M
+                </button>
+            </div>
+        </div>
+
+        <div class="ip-results" id="ipResults" style="display: none;">
+            <div class="results-header">
+                <span class="results-icon">[●]</span>
+                <h3>MƏLUMAT TAPILDI</h3>
+            </div>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <span class="result-label">IP ÜNVANI</span>
+                    <span class="result-value" id="resultIp">-</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-label">ÖLKƏ</span>
+                    <span class="result-value" id="resultCountry">-</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-label">REGION</span>
+                    <span class="result-value" id="resultRegion">-</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-label">ŞƏHƏR</span>
+                    <span class="result-value" id="resultCity">-</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-label">ISP</span>
+                    <span class="result-value" id="resultIsp">-</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-label">KOORDİNATLAR</span>
+                    <span class="result-value" id="resultCoords">-</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-label">ZAMAN QURŞAĞI</span>
+                    <span class="result-value" id="resultTimezone">-</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-label">POÇT KODU</span>
+                    <span class="result-value" id="resultZip">-</span>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <div class="map-header">
+                    <span class="map-icon">[MAP]</span>
+                    <span>COĞRAFİ MÖVQEYİ</span>
+                </div>
+                <div id="mapDisplay" class="map-display">
+                    <div class="map-placeholder">
+                        <svg width="64" height="64" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <p>MÖVQEYİ XƏRITƏDƏ GÖSTƏR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading-indicator" id="loadingIndicator" style="display: none;">
+            <div class="loading-spinner"></div>
+            <p>MƏLUMAT YÜKLƏNIR...</p>
+        </div>
+
+        <div class="error-message" id="errorMessage" style="display: none;">
+            <span class="error-icon">[X]</span>
+            <p id="errorText">XƏTA BAŞVERDI</p>
+        </div>
+    </div>
+</section>
 
         <section id="contact" class="section contact-section">
             <div class="contact-content">
@@ -298,124 +412,6 @@
             <p class="disclaimer">// SYSTEM INFO: Bu layihə məlumatlandırıcı və maarifləndirici xarakter daşıyır. Biz hüquqi şəxs deyilik və kibertəhlükəsizlik sahəsində peşəkar xidmətlər təqdim etmirik. Məlumatlar ümumi təhsil məqsədlidir və peşəkar məsləhəti əvəz etmir.</p>
         </footer>
     </div>
-        <script>
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenuBtn.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        const threatObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.classList.add('visible');
-                    }, index * 100);
-                    threatObserver.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px'
-        });
-
-        document.querySelectorAll('.threat-item').forEach(item => {
-            threatObserver.observe(item);
-        });
-        const hashInput = document.getElementById('hashInput');
-    const hashOutput = document.getElementById('hashOutput');
-    const copyBtn = document.getElementById('copyBtn');
-    const hashBtns = document.querySelectorAll('.hash-btn');
-    let currentAlgo = 'md5';
-    
-    function generateHash() {
-        const text = hashInput.value.trim();
-        
-        if (!text) {
-            hashOutput.innerHTML = '<span class="placeholder">[Hash nəticəsi burada görünəcək...]</span>';
-            copyBtn.style.display = 'none';
-            return;
-        }
-        
-        let hash = '';
-        
-        switch(currentAlgo) {
-            case 'md5':
-                hash = CryptoJS.MD5(text).toString();
-                break;
-            case 'sha1':
-                hash = CryptoJS.SHA1(text).toString();
-                break;
-            case 'sha256':
-                hash = CryptoJS.SHA256(text).toString();
-                break;
-            case 'sha512':
-                hash = CryptoJS.SHA512(text).toString();
-                break;
-        }
-        
-        hashOutput.innerHTML = `<span class="hash-result">${hash}</span>`;
-        copyBtn.style.display = 'inline-flex';
-    }
-    
-    hashInput.addEventListener('input', generateHash);
-    
-    hashBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            hashBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            currentAlgo = btn.dataset.algo;
-            generateHash();
-        });
-    });
-    
-    copyBtn.addEventListener('click', () => {
-        const hashText = hashOutput.querySelector('.hash-result');
-        if (hashText) {
-            navigator.clipboard.writeText(hashText.textContent).then(() => {
-                copyBtn.classList.add('copied');
-                copyBtn.innerHTML = `
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                    </svg>
-                    KOPYALANDI
-                `;
-                
-                setTimeout(() => {
-                    copyBtn.classList.remove('copied');
-                    copyBtn.innerHTML = `
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
-                        </svg>
-                        KOPYALA
-                    `;
-                }, 2000);
-            });
-        }
-    });
-        </script>
+<script src="script.js"></script>
 </body>
 </html>
